@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<app title="JustEnough" file="JustEnough" main="Main" version="0.0.1" company="Zaphod" />
+	
+	<window width="640" height="480" fps="60" orientation="portrait" resizable="true" if="web" />
+	<window width="640" height="480" fps="60" orientation="landscape" fullscreen="true" unless="web" />
+ 	
+	<set name="BUILD_DIR" value="export" />
+	
+	<!--<setenv name="no_console" value="1" />-->
+	
+	<classpath name="source" />
+	
+	<assets path="assets" if="android" >
+		<sound path="data/beep.wav" id="Beep" />
+		
+		<!-- Your sound embedding code here... -->
+		
+	</assets>
+	
+	<assets path="assets" if="desktop" >
+		<sound path="data/beep.wav" id="Beep" />
+		<sound path="data/pickup.wav" id="Pickup" />
+		<sound path="data/click.wav" id="Click" />
+		<sound path="data/jump.wav" id="Jump" />
+		<sound path="data/hurt.wav" id="Hurt" />
+		<!-- Your sound embedding code here... -->
+		<music path="data/surreal_ambient.mp3" id="Ambient" />
+		<music path="data/etherial_hibpm.mp3" id="Upbeat" />
+		<music path="data/standard_beat.mp3" id="Beat" />
+		
+	</assets>
+	
+	<assets path="assets" if="flash" >
+		<sound path="data/beep.wav" id="Beep" />
+		<sound path="data/pickup.wav" id="Pickup" />
+		<sound path="data/click.wav" id="Click" />
+		<sound path="data/jump.wav" id="Jump" />
+		<sound path="data/hurt.wav" id="Hurt" />
+		<!-- Your sound embedding code here... -->
+		<music path="data/surreal_ambient.mp3" id="Ambient" />
+		<music path="data/etherial_hibpm.mp3" id="Upbeat" />
+		<music path="data/standard_beat.mp3" id="Beat" />
+		
+	</assets>
+	
+	<assets path="assets" if="target_js" >
+		<sound path="data/beep.wav" id="Beep" />
+		<sound path="data/pickup.wav" id="Pickup" />
+		<sound path="data/click.wav" id="Click" />
+		<sound path="data/jump.wav" id="Jump" />
+		<sound path="data/hurt.wav" id="Hurt" />
+		<!-- Your sound embedding code here... -->
+		<music path="data/surreal_ambient.mp3" id="Ambient" />
+		<music path="data/etherial_hibpm.mp3" id="Upbeat" />
+		<music path="data/standard_beat.mp3" id="Beat" />
+		
+		<!-- Your sound embedding code here... -->
+		
+	</assets>
+	
+	<assets path="assets" exclude="*.wav" if="flash" />
+	<assets path="assets" exclude="*.svg" if="html5" />
+	<assets path="assets" if="desktop" />
+	<assets path="assets" if="mobile" />
+	
+	<icon name="assets/HaxeFlixel.svg" />
+	
+	<haxelib name="nme" />
+	<haxelib name="flixel"/>
+	
+    <!--Disable the Flixel core debugger-->
+    <!--<set name="FLX_NO_DEBUG" />-->
+	
+    <!--Disable the Flixel core recording system if your not using it-->
+    <!--<set name="FLX_NO_RECORD" />-->
+	
+	<!--Optimise inputs, be careful you will get null errors if you don't use conditionals in your game-->
+    <!--<set name="FLX_NO_MOUSE" if="mobile" />-->
+    <!--<set name="FLX_NO_KEYBOARD" if="mobile" />-->
+    <!--<set name="FLX_NO_TOUCH" if="desktop" />-->
+    <!--<set name="FLX_NO_JOYSTICK" />-->
+
+</project>

@@ -1,0 +1,15 @@
+-main ApplicationMain 
+-lib nme
+-lib flixel
+-cp source
+-cp /usr/lib/haxe/lib/nme/3,5,5/
+-cp /usr/lib/haxe/lib/flixel/1,09/
+-D nme_install_tool
+-D HXCPP_M64
+-D linux
+-D desktop
+-cp export/linux64/neko/haxe
+-neko export/linux64/neko/obj/ApplicationMain.n
+--remap flash:nme
+--remap browser:native
+-debug
