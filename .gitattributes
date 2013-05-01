@@ -1,2 +1,3 @@
 *.dam -diff
 *.dam.bak -diff
+*.csv -diff

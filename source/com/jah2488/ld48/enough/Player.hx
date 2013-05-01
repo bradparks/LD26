@@ -79,13 +79,6 @@ class Player extends FlxSprite
 				angle = 0;
 			}
 		}
-		// if(isTouching(FlxObject.CEILING)) {
-		// 	if(angle < 180) {
-		// 		angle += 20;
-		// 	}
-		// } else if(angle > 0) {
-		// 	angle -= 10;
-		// }
 
 		if(FlxG.keys.LEFT || FlxG.keys.A){
 			if(state()!= DOOR){
@@ -117,10 +110,6 @@ class Player extends FlxSprite
 	  		}
 		  }
 		}
-
-	    // if(FlxG.keys.justReleased("SHIFT")){
-	    //   upsidedown *= -1;
-	    // }
 
 	}
 }

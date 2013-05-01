@@ -273,6 +273,8 @@ class PlatformState extends FlxState
     		FlxG.flash(0xffffffff, 1, nextLevel);
 		} else {
 	    	FlxG.play("Pickup");
+	    	LEVEL_START.x = sprite.x;
+	    	LEVEL_START.y = sprite.y;
 	    	player.flicker(1);
 	    	cast(player, Player).setColor(cast(sprite, Tile).playerColor);
 	    	sprite.kill();
