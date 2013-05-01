@@ -3,7 +3,7 @@
 	<app title="JustEnough" file="JustEnough" main="Main" version="0.0.1" company="Zaphod" />
 	
 	<window width="640" height="480" fps="60" orientation="portrait" resizable="true" if="web" />
-	<window width="640" height="480" fps="60" orientation="landscape" fullscreen="true" unless="web" />
+	<window width="640" height="480" fps="60" orientation="landscape" fullscreen="false" unless="web" />
  	
 	<set name="BUILD_DIR" value="export" />
 	
@@ -64,8 +64,14 @@
 	<assets path="assets" if="desktop" />
 	<assets path="assets" if="mobile" />
 	
-	<icon name="assets/HaxeFlixel.svg" />
-	
+	<icon path="assets/icon.png" width="16" height="16"/>
+    <!--<icon path="assets/icon.png" width="32" height="32"/>
+    <icon path="assets/icon.png" width="48" height="48"/>
+    <icon path="assets/icon.png" width="128" height="128"/>
+    <icon path="assets/icon.png" width="256" height="256"/>
+    <icon path="assets/icon.png" width="512" height="512"/>
+    <icon path="assets/icon.png" width="1024" height="1024"/>	-->
+
 	<haxelib name="nme" />
 	<haxelib name="flixel"/>
 	
@@ -73,7 +79,7 @@
     <!--<set name="FLX_NO_DEBUG" />-->
 	
     <!--Disable the Flixel core recording system if your not using it-->
-    <!--<set name="FLX_NO_RECORD" />-->
+    <set name="FLX_NO_RECORD" />
 	
 	<!--Optimise inputs, be careful you will get null errors if you don't use conditionals in your game-->
     <!--<set name="FLX_NO_MOUSE" if="mobile" />-->

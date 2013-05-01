@@ -79,7 +79,7 @@ class Power extends Tile
 		playerColor = 4;
 		this.x = x;
 		this.y = y;
-		this.loadGraphic('assets/cPower.png', true, false, 16, 16);
+		this.loadGraphic('assets/power.png', true, false, 16, 16);
 		this.addAnimation('flow', [0,1,2,3,4,5,6,7,8,9,10,11,12,13], 15);
 		this.play('flow');
 	}
