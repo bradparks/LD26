@@ -80,6 +80,12 @@ class Player extends FlxSprite
 			}
 		}
 
+		if(FlxG.keys.DOWN || FlxG.keys.S){
+			if(state() == LAVA) {
+				acceleration.y = 150;
+			}
+		}
+
 		if(FlxG.keys.LEFT || FlxG.keys.A){
 			if(state()!= DOOR){
 			    facing = FlxObject.LEFT;
