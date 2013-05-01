@@ -1,7 +1,7 @@
 package;
 
-import com.jah2488.ld48.enough.PlatformState.Registry;
-import com.jah2488.ld48.enough.PlatformState.TutorialState;
+import com.jah2488.ld48.enough.Registry;
+import com.jah2488.ld48.enough.levels.TutorialState;
 import com.jah2488.ld48.Level;
 import nme.Assets;
 import nme.geom.Rectangle;
@@ -17,7 +17,7 @@ import org.flixel.FlxU;
 import org.flixel.FlxTilemap;
 
 import com.jah2488.ld48.enough.Tiles.World;
-import com.jah2488.ld48.enough.PlatformState.WinState;
+import com.jah2488.ld48.enough.levels.WinState;
 
 
 
